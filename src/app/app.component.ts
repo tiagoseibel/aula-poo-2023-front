@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'poobank-front';
+
+  usuario = "";
+  senha = "";
+
+  entrarSistema() {
+    alert("Login OK para: " + this.usuario);
+  }
+
 }
