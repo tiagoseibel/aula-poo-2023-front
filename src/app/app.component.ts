@@ -7,11 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  usuario = "";
-  senha = "";
-
-  entrarSistema() {
-    alert("Login OK para: " + this.usuario);
-  }
-
 }
