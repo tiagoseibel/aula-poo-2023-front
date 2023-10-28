@@ -25,7 +25,7 @@ export class LoginComponent {
     this.service.login(this.usuario)
     .subscribe(
       (response) => {
-        if(response.id != null) {
+        if(response && response.id != null) {
           this.service.dadosUsuario = response;
           this.router.navigate(['principal']);
         } else {
