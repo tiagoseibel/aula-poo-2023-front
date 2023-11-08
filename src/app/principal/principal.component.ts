@@ -9,6 +9,7 @@ import { CorrentistaService } from '../correntista.service';
 export class PrincipalComponent implements OnInit {
  
   public cpf: string = "";
+  public nome: string = "";
 
   constructor(
     private service: CorrentistaService
@@ -16,5 +17,15 @@ export class PrincipalComponent implements OnInit {
 
   ngOnInit(): void {
     this.cpf = this.service.dadosUsuario.cpf;
+    this.nome = this.service.dadosUsuario.nome;
+    this.buscarSaldo();
+  }
+
+  public saldo: number = 0;
+  private buscarSaldo(): void {
+    let id = this.service.dadosUsuario.id;
+    this.service.saldo(id).subscribe (item => {
+      this.saldo = item;
+    });
   }
 }

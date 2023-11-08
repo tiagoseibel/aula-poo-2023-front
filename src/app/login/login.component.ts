@@ -29,7 +29,7 @@ export class LoginComponent {
           this.service.dadosUsuario = response;
           this.router.navigate(['principal']);
         } else {
-          this.message.add({severity: 'warn', summary: 'alert', detail:'Login incorreto!'});
+          this.message.add({severity: 'warn', summary: 'Aviso', detail:'Login incorreto!'});
         }
       }
     )

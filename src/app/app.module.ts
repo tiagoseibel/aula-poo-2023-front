@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { CardModule } from 'primeng/card';
 
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
@@ -28,7 +29,8 @@ import { PrincipalComponent } from './principal/principal.component';
     HttpClientModule,
     ButtonModule,
     InputTextModule,
-    ToastModule
+    ToastModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

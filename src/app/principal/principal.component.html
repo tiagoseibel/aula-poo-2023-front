@@ -1,11 +1,25 @@
 <div class="container">
-    <p>POO Bank - Pagina do Usuario</p>
-    <div class="grid">
-        <div class="col-6 p-fluid">
-            CPF:
-        </div>
-        <div class="col-6 p-fluid">
-            {{cpf}}
-        </div>
-    </div>
+    <p-card header="POO Bank">
+        <p-card>
+            <div class="grid">
+                <div class="col-12 p-fluid">
+                    {{nome}}
+                </div>
+                <div class="col-6 p-fluid">
+                    CPF:
+                </div>
+                <div class="col-6 p-fluid">
+                    {{cpf}}
+                </div>
+            </div>
+        </p-card>
+        <p></p>
+        <p-card>
+            <div class="grid">
+                <div class="col-12 p-fluid">
+                    <h1>{{saldo | currency:'BRL':'symbol':'1.2-2' }}</h1>
+                </div>
+            </div>
+        </p-card>
+    </p-card>
 </div>
