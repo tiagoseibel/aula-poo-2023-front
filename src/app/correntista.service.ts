@@ -21,4 +21,8 @@ export class CorrentistaService {
   public saldo(id: number) : Observable<any> {
     return this.http.get("http://localhost:8080/movimentacao/saldo/"+id);
   }
+
+  public extrato(id: number) : Observable<any[]> {
+    return this.http.get<any>("http://localhost:8080/movimentacao/extrato/"+id);
+  }
 }

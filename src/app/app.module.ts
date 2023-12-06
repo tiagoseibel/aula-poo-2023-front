@@ -7,6 +7,7 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { ToastModule } from 'primeng/toast';
+import { TableModule } from 'primeng/table';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -30,7 +31,8 @@ import { PrincipalComponent } from './principal/principal.component';
     ButtonModule,
     InputTextModule,
     ToastModule,
-    CardModule
+    CardModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
